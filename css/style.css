@@ -60,9 +60,16 @@ html {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #212529;
+  color: #212529; 
   text-align: left;
-  background-color: green; 
+  background-color: white; 
+}
+
+.navbar-dark .navbar-toggler {
+  color: rgba(255, 255, 255, 0.5);
+  border-color: rgba(255, 255, 255, 0.1);
+  position: absolute;
+  left: 81%;
 }
 
 /* Alert */
@@ -2746,8 +2753,18 @@ textarea.form-control {
   }
 
   @media (max-width: 767.98px) {
+    .sermon-wrap .text h2 a{
+      font-size: 22px;
+      font-weight: 700;
+    }
+
+    .event-wrap .text h2 a{
+      font-size: 20px;
+      font-weight: 700;
+    }
     .popup{
       width: 300px;
+      height: 200px;
       background: #fff;
       border-radius: 6px;
       position: absolute;
@@ -2783,7 +2800,7 @@ textarea.form-control {
     
     .popup button{
       width: 100%;
-      margin-top: 50px;
+      margin-top: 20px;
       padding: 10px 0;
       background: #6fd649;
       color: #fff;
@@ -2809,11 +2826,11 @@ textarea.form-control {
   }
 
   .first-man{
-    width: 70%;
+    width: 90%;
     font-size: 30px;
     text-align: center;
     position: relative;
-    left: 15%;
+    left: 5%;
   }
   }
 
@@ -2822,11 +2839,14 @@ textarea.form-control {
       .heading-section h2 {
         font-size: 28px; } }
   .heading-section.heading-section-white .subheading {
-    color: #fff; }
+    color: #fff; 
+  }
   .heading-section.heading-section-white h2 {
-    color: #fff; }
+    color: #fff; 
+  }
   .heading-section.heading-section-white p {
-    color: rgba(255, 255, 255, 0.9); }
+    color: rgba(255, 255, 255, 0.9); 
+  }
 
 .img,
 .blog-img,
@@ -2834,20 +2854,24 @@ textarea.form-control {
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center; }
+  background-position: center center; 
+}
 
 .testimony-section {
   position: relative;
-  background: #9e0c2f; }
+  background: #9e0c2f; 
+}
   .testimony-section .owl-carousel {
-    margin: 0; }
+    margin: 0; 
+  }
   .testimony-section .owl-carousel .owl-stage-outer {
     padding: 20px 0 2em 0;
     position: relative; }
   .testimony-section .owl-nav {
     position: absolute;
     top: 100%;
-    width: 100%; }
+    width: 100%; 
+  }
     .testimony-section .owl-nav .owl-prev,
     .testimony-section .owl-nav .owl-next {
       position: absolute;
@@ -2861,7 +2885,8 @@ textarea.form-control {
       -webkit-transition: all 0.3s ease;
       -ms-transition: all 0.3s ease;
       transition: all 0.3s ease;
-      opacity: 0; }
+      opacity: 0; 
+    }
       .testimony-section .owl-nav .owl-prev span:before,
       .testimony-section .owl-nav .owl-next span:before {
         font-size: 30px;
@@ -2870,11 +2895,13 @@ textarea.form-control {
         -o-transition: all 0.3s ease;
         -webkit-transition: all 0.3s ease;
         -ms-transition: all 0.3s ease;
-        transition: all 0.3s ease; }
+        transition: all 0.3s ease; 
+      }
       .testimony-section .owl-nav .owl-prev:hover span:before, .testimony-section .owl-nav .owl-prev:focus span:before,
       .testimony-section .owl-nav .owl-next:hover span:before,
       .testimony-section .owl-nav .owl-next:focus span:before {
-        color: #fff; }
+        color: #fff; 
+      }
     .testimony-section .owl-nav .owl-prev {
       left: 50%;
       margin-left: -80px; }
