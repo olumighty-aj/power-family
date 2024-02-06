@@ -68,8 +68,88 @@ html {
 .navbar-dark .navbar-toggler {
   color: rgba(255, 255, 255, 0.5);
   border-color: rgba(255, 255, 255, 0.1);
+  position: relative;
+  margin-top: -12%;
+  left: 88%;
+}
+
+.navbar-toggler{
+  width: 20px;
+  height: 20px;
+  position: relative;
+  transition: .5s ease-in-out;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus{
+  outline: none;
+  box-shadow: none;
+  border: 0;
+}
+
+.navbar-toggler span{
+  margin: 0;
+  padding: 0;
+
+}
+
+.toggler-icon{
+  display: block;
   position: absolute;
-  left: 81%;
+  height: 3px;
+  width: 100%;
+  background: #d3531a;
+  border-radius: 1px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+
+.middle-bar{
+  margin-top:0px;
+
+}
+
+/* When nav is clicked */
+
+.navbar-toggler .top-bar{
+  margin-top: 0px;
+  transform: rotate(135deg);
+
+}
+
+.navbar-toggler .middle-bar{
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+.navbar-toggler .bottom-bar{
+  margin-top: 0px;
+  transform: rotate(-135deg);
+}
+
+/* State when the navbar is collapsed */
+
+.navbar-toggler.collapsed .top-bar{
+  margin-top: -20px;
+  transform: rotate(0deg);
+}
+ 
+.navbar-toggler.collapsed .middle-bar{
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.navbar-toggler.collapsed .bottom-bar{
+  margin-top: 20px;
+  transform: rotate(0deg);
+}
+
+.navbar-toggler.collapsed .toggler-icon{
+  background: linear-gradient(263deg, rgba(252, 74,74,1) 0%, rgba(0,212,255,1) 100%);
 }
 
 /* Alert */
@@ -998,7 +1078,7 @@ fieldset:disabled a.btn {
 .dropdown-menu.show {
   display: block; }
 
-.nav {
+/* .nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1006,9 +1086,9 @@ fieldset:disabled a.btn {
   flex-wrap: wrap;
   padding-left: 0;
   margin-bottom: 0;
-  list-style: none; }
+  list-style: none; } */
 
-.nav-link {
+/* .nav-link {
   display: block;
   padding: 0.5rem 1rem; }
   .nav-link:hover, .nav-link:focus {
@@ -1016,9 +1096,9 @@ fieldset:disabled a.btn {
   .nav-link.disabled {
     color: #6c757d;
     pointer-events: none;
-    cursor: default; }
+    cursor: default; } */
 
-.navbar {
+/* .navbar {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1031,8 +1111,8 @@ fieldset:disabled a.btn {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding: 0.5rem 1rem; }
-  .navbar .container,
+  padding: 0.5rem 1rem; } */
+  /* .navbar .container,
   .navbar .container-fluid {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1044,9 +1124,9 @@ fieldset:disabled a.btn {
     align-items: center;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
-    justify-content: space-between; }
+    justify-content: space-between; } */
 
-.navbar-brand {
+/* .navbar-brand {
   display: inline-block;
   padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
@@ -1055,9 +1135,9 @@ fieldset:disabled a.btn {
   line-height: inherit;
   white-space: nowrap; }
   .navbar-brand:hover, .navbar-brand:focus {
-    text-decoration: none; }
+    text-decoration: none; } */
 
-.navbar-nav {
+/* .navbar-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1073,9 +1153,9 @@ fieldset:disabled a.btn {
     padding-left: 0; }
   .navbar-nav .dropdown-menu {
     position: static;
-    float: none; }
+    float: none; } */
 
-.navbar-collapse {
+/* .navbar-collapse {
   -ms-flex-preferred-size: 100%;
   flex-basis: 100%;
   -webkit-box-flex: 1;
@@ -1083,9 +1163,9 @@ fieldset:disabled a.btn {
   flex-grow: 1;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center; } */
 
-.navbar-toggler {
+/* .navbar-toggler {
   padding: 0.25rem 0.75rem;
   font-size: 1.25rem;
   line-height: 1;
@@ -1093,7 +1173,7 @@ fieldset:disabled a.btn {
   border: 1px solid transparent;
   border-radius: 0.25rem; }
   .navbar-toggler:hover, .navbar-toggler:focus {
-    text-decoration: none; }
+    text-decoration: none; } */
 
 @media (max-width: 991.98px) {
   .navbar-expand-lg > .container,
