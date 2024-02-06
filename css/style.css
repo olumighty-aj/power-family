@@ -3582,3 +3582,12 @@ input:checked + .slider:before {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } 
   }
+
+
+  /* About */
+
+  .about-p{
+    font-size: 14px;
+    color: #fff;
+    padding: 10px;
+  }
