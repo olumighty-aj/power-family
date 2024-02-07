@@ -2473,6 +2473,11 @@ h1, h2, h3, h4, h5,
     margin-bottom: 5px; } }
 
 @media (max-width: 767.98px) {
+  .sermon-wrap .btn-customize a {
+    display: block;
+    margin-bottom: 5px;
+    margin-left: 20px;
+   } 
   .sermon-wrap .text {
     padding: 20px; } }
 
@@ -2928,7 +2933,6 @@ input:checked + .slider:before {
   .services-2.services-block .text h4{
     color: white;
     text-transform: capitalize;
-    width: 349px;
     margin-top: 40px;
     margin-bottom: 2px;
     font-size: 19px;
@@ -2945,10 +2949,10 @@ input:checked + .slider:before {
   margin-top: 0px;
   margin-bottom: 2px;
   font-size: 13px;
-  border: 2px solid #fff;
+  /* border: 2px solid #fff; */
   text-align: center;
   padding: 7px;
-  border-radius: 20px;
+  /* border-radius: 20px; */
 }
   }
   /* Sermon */
