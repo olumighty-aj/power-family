@@ -2928,6 +2928,7 @@ input:checked + .slider:before {
   .services-2.services-block .text h4{
     color: white;
     text-transform: capitalize;
+    width: 349px;
     margin-top: 40px;
     margin-bottom: 2px;
     font-size: 19px;
@@ -2940,7 +2941,7 @@ input:checked + .slider:before {
 .services-2.services-block .text h4 span{
   color: white;
   text-transform: capitalize;
-  width: 80px;
+  width: 100px;
   margin-top: 0px;
   margin-bottom: 2px;
   font-size: 13px;
