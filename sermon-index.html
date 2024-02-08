@@ -61,13 +61,16 @@
             <div class="row justify-content-center pb-5">
             <div class="col-md-7 heading-section heading-section-white text-center ftco-animate fadeInUp ftco-animated">
             <span class="subheading">Sermon</span>
-            <!-- <h2 id="sermonName"></h2> -->
+           <h2>
+			<div id="itemName"></div>
+		   </h2> 
             </div>
             </div>
             
-            <h1 id="sermonTitle" style="color: white; font-size: 20;"></h1>
-            <p id="sermonTopic" style="color: white; font-size: 20;"></p>
-            <p id="sermonText" style="color: white; font-size: 20;"></p>
+			<p class="sermon-text" style="color: white; font-size: 15px; ">
+				<div id="itemDescription"></div>
+			</p>
+			
             <!-- <p class="about-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, excepturi sed, ad adipisci delectus 
                 necessitatibus reprehenderit tenetur corporis aliquid nulla odio nisi iusto doloribus quaerat esse libero omnis ratione quos. 
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima repudiandae impedit ratione quaerat natus fugiat voluptatem voluptatum, consequuntur suscipit veniam tenetur quia esse, asperiores quasi illo velit illum! Perspiciatis, totam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum alias eum consectetur est veritatis voluptas molestiae? Ab vero offic
@@ -218,7 +221,49 @@
 				document.body.classList = "dark-theme";
 			}
 		</script>
-         <script src="sermon.js"></script>
+             <script>
+				// Function to fetch item details based on ID
+				// This is a placeholder function. You'll replace it with your actual data fetching logic
+				function fetchItemDetails(id) {
+					// Example items data
+					const items = {
+						'1': { name: 'The Power of Prayer',
+						 description: 'As believers, our aim is not only to obey the Lord swe collectively shine the light of the Word and fulfill our sacred mission. God bless you as you embark on this transformative path with PRCC. command but to ensure that our fruits endure and contribute to the divine purpose. Join us on this empowering journey as we we collectively shine the light of the Word and fulfill our sacred mission. God bless you as you emba.' 
+							},
+						'2': { 
+							name: 'Finding Hope', 
+							description: 'Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.' 
+							},
+						'3': { 
+							name: 'The Power of Resurrection', 
+							description: 'Welcome to Power of Resurrection Christian Church, where the Lord has called us to be the radiant light and transformative salt in this world (Mt 5:13-15). Acknowledging the significance of our responsibilities, we have outlined qualifications and a code of conduct for ministry workers to ensure faithful and fruitful service.' 
+							},
+						'4': { 
+							name: 'Accelerated Promotion',
+							description: 'Welcome to Power of Resurrection Christian Church, where the Lord has called us to be the radiant light and transformative salt in this world (Mt 5:13-15). Acknowledging the significance of our responsibilities, we have outlined qualifications and a code of conduct for ministry workers to ensure faithful and fruitful service.' 
+							},
+						'5': { 
+							name: 'God Will Do A New Thing In Your Life', 
+							description: 'Welcome to Power of Resurrection Christian Church, where the Lord has called us to be the radiant light and transformative salt in this world (Mt 5:13-15). Acknowledging the significance of our responsibilities, we have outlined qualifications and a code of conduct for ministry workers to ensure faithful and fruitful service.' 
+							},
+					};
+					return items[id];
+				}
+		
+				// Function to display item details
+				function displayItemDetails(item) {
+					document.getElementById('itemName').textContent = item.name;
+					document.getElementById('itemDescription').textContent = item.description;
+				}
+		
+				// Extracting item ID from URL
+				const urlParams = new URLSearchParams(window.location.search);
+				const itemId = urlParams.get('id');
+		
+				// Fetch and display item details
+				const itemDetails = fetchItemDetails(itemId);
+				displayItemDetails(itemDetails);
+			</script>
 		</body>
 
 </html>

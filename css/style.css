@@ -296,6 +296,7 @@ html {
     margin-top: -1%;
   }
 
+
 [tabindex="-1"]:focus:not(:focus-visible) {
   outline: 0 !important; }
 
