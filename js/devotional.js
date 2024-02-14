@@ -84,7 +84,8 @@ document.addEventListener("DOMContentLoaded", function () {
       devotionalContentElement.querySelectorAll('p').forEach(p => {
         p.style.color = "#fff";
         p.style.padding = "20px" // Set text color for paragraphs
-        p.style.fontSize = "18px"; // Set font size for paragraphs
+        p.style.fontSize = "18px";
+        p.style.fontFamily = "sans-serif" // Set font size for paragraphs
       });
     }
   }
