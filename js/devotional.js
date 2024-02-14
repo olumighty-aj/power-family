@@ -78,8 +78,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
       devotionalContentElement.querySelector('h2').style.color = "#fff"; // Example: Set title color
       devotionalContentElement.querySelector('h2').style.fontSize = "27px";
+      devotionalContentElement.querySelector('h2').style.fontFamily = "sans-serif";
       devotionalContentElement.querySelector('h6').style.textAlign = "center";
       devotionalContentElement.querySelector('h6').style.color = "white";
+      devotionalContentElement.querySelector('h6').style.fontFamily = "sans-serif";
       devotionalContentElement.querySelector('h2').style.paddingLeft = "20px"; // Set font size for title
       devotionalContentElement.querySelectorAll('p').forEach(p => {
         p.style.color = "#fff";
