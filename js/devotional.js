@@ -88,3 +88,23 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     }
   }
+
+  function displayDateTime() {
+    const now = new Date();
+    const year = now.getFullYear();
+    const month = String(now.getMonth() + 1).padStart(2, '0'); // Months are 0-based
+    const day = String(now.getDate()).padStart(2, '0');
+    const hours = String(now.getHours()).padStart(2, '0');
+    const minutes = String(now.getMinutes()).padStart(2, '0');
+    const seconds = String(now.getSeconds()).padStart(2, '0');
+  
+    const formattedDateTime = `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;
+    console.log(formattedDateTime); // Output to console
+    // If you want to display this in the HTML document, you can do so like this:
+    // document.body.innerHTML = `<p>Current Date and Time: ${formattedDateTime}</p>`;
+    document.getElementById('date-time-display').innerText = `Date & Time: ${formattedDateTime}`;
+
+    setInterval(displayDateTime, 1000);
+  }
+  
+  displayDateTime();

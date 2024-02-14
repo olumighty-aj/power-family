@@ -41,7 +41,14 @@
   box-sizing: border-box; }
   /* background-image: url(&quot;images/bg_1.jpg&quot;); */
 
+#date-time-display{
+  padding: 20px;
 
+}
+
+#devotional-content{
+  margin-top: -10px;
+}
 
 html {
   font-family: sans-serif;
