@@ -1133,7 +1133,7 @@ fieldset:disabled a.btn {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #000;
+  background-color: #333;
   -webkit-transition: .4s;
   transition: .4s;
   border-radius: 34px;
@@ -1155,7 +1155,7 @@ fieldset:disabled a.btn {
 
 /* When the switch is checked, change the background color of the slider */
 input:checked + .slider {
-  background-color: #fff;
+  background-color: white;
 }
 
 /* When the switch is checked, translate the slider to the right */
@@ -2816,6 +2816,7 @@ textarea.form-control {
   /* MediaQuery */
 
   @media (max-width: 767.98px) {
+
 .navbar-brand{
   margin-left: 10px;
 }
@@ -3260,6 +3261,11 @@ input:checked + .slider:before {
 
 .dark-theme .event-time{
   color: black;
+}
+
+.dark-theme .testimony-section {
+  position: relative;
+  background: #333; 
 }
 
 .dark-theme .event-location{
